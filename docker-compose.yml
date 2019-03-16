@@ -77,6 +77,7 @@ services:
       - derivatives:${DERIVATIVES_PATH}
       - cache:${CACHE_PATH}
       - /srv/ngdr/data/:/data/data
+      - /mnt/ngdr/:/mnt/ngdr
     networks:
       internal:
 
