@@ -9,10 +9,6 @@ volumes:
 
 services:
 
-  app:
-    volumes:
-      - /mnt/ngdr/:/mnt/ngdr
-
   nginx:
     image: nginx:stable-alpine
     depends_on:
