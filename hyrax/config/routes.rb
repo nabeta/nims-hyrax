@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 
   concern :exportable, Blacklight::Routes::Exportable.new
   concern :searchable, Blacklight::Routes::Searchable.new
+  concern :oai_provider, BlacklightOaiProvider::Routes.new
 
   curation_concerns_basic_routes
 
@@ -27,6 +28,7 @@ Rails.application.routes.draw do
   end
 
   resource :catalog, only: [:index], as: 'catalog', path: '/catalog', controller: 'catalog' do
+    concerns :oai_provider
     concerns :searchable
   end
 
