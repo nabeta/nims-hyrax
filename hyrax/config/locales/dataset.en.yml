@@ -6,6 +6,9 @@ en:
       dataset:
         description:        "Dataset works"
         name:               "Dataset"
+    browse_dataset:         "Browse all datasets"
+    browse_publication:     "Browse all publications"
+    browse_collection:      "Browse all collections"
   simple_form:
     labels:
       dataset:
@@ -21,7 +24,7 @@ en:
         computational_methods:    "Computational methods"
         custom_property:          "custom property"
         data_origin:              "Data origin"
-        instrument:               "Instrument"
+        complex_instrument:       "Instrument"
         material_types:           "Material types "
         measurement_environment:  "Measurement environment"
         origin_system_provenance: "Origin system provenance"
@@ -29,8 +32,8 @@ en:
         processing_environment:   "Processing environment"
         properties_addressed:     "Properties addressed"
         specimen_set:             "Specimen set"
-        specimen_type:            "Specimen type"
-        structural_features:      "Structural features"
+        complex_specimen_type:    "Specimen type"
+        complex_structural_features: "Structural features"
         synthesis_and_processing: "Synthesis and processing"
         status_at_start:          "Status at start"
         status_at_end:            "Status at end"

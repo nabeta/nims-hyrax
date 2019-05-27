@@ -72,6 +72,10 @@ gem 'bootstrap-datepicker-rails'
 gem 'pg'
 
 gem 'riiif', '~> 2.0'
-gem 'airbrake', '~> 5.0'
+
+group :production do
+  gem 'airbrake', '~> 5.0'
+end
+
 gem 'browse-everything'
 gem 'blacklight_oai_provider', git: 'https://github.com/CottageLabs/blacklight_oai_provider.git', branch: 'master'

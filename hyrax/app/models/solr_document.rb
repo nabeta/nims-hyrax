@@ -39,7 +39,11 @@ class SolrDocument
   end
 
   def complex_instrument
-    self[Solrizer.solr_name('instrument', :displayable)]
+    self[Solrizer.solr_name('complex_instrument', :displayable)]
+  end
+
+  def complex_organization
+    self[Solrizer.solr_name('complex_organization', :displayable)]
   end
 
   def complex_person
@@ -48,6 +52,10 @@ class SolrDocument
 
   def complex_rights
     self[Solrizer.solr_name('complex_rights', :displayable)]
+  end
+
+  def complex_specimen_type
+    self[Solrizer.solr_name('complex_specimen_type', :displayable)]
   end
 
   def complex_version
@@ -84,10 +92,6 @@ class SolrDocument
 
   def specimen_set
     self[Solrizer.solr_name('specimen_set', :stored_searchable)]
-  end
-
-  def specimen_type
-    self[Solrizer.solr_name('specimen_type', :displayable)]
   end
 
   def synthesis_and_processing
